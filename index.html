@@ -1,58 +1,367 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<html lang="en">
 
-.bgimg {
-  background-color: black;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+<head>
+    <meta charset="utf-8">
+    <title>Hello, I am Mirza</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-<div class="bgimg">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#certificates" class="nav-item nav-link">Certificates</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <!--  <a href="" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Hire Me</a>   -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
  
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p>Stay tuned!</p>
-  </div>
-  
-</div>
 
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+               
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Hello, my name is</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 4px #ffffff;">Mirza Žiko</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Full stack developer, Web App Developer, Front-End Developer, Back-End Developer, Database Engineer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Learn more about me!</h3>
+                    <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. 
+                        Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum. 
+                        Amet dolor stet lorem diam dolor justo et dolor dolor dolor</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Mirza Žiko</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Date of Birth: <span class="text-secondary">15 May 1999</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Undergradueted</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">1 Year</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">mirza.ziko@outlook.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                    </div>
+                    <!--
+                    <a href="" class="btn blue btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a>
+                    -->
+                    <a href="" class="btn btn-outline-primary">Download Resume!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Typescript</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Angular</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Wordpress</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Java</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C++</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">MySQL</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PostgreSQL</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Ubuntu server</h6>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Google Firebase</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Telecommunications Electrician</h5>
+                            <p class="mb-2"><strong>High School of Electrical Engineering in Sarajevo</strong> | <small>2014 - 2018</small></p>
+                            <p><a href="https://www.ets-sa.edu.ba/">Page</a></p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software developer</h5>
+                            <p class="mb-2"><strong>Faculty of Electrical Engineering in Sarajevo</strong> | <small>2018 - Present</small></p>
+                            <p><a href="https://rs.etf.unsa.ba">Page</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Application and Website tesiter</h5>
+                            <p class="mb-2"><strong><a href="https://www.utest.com/">uTest</a></strong></p>
+                            <p><ul>
+                                <li> functional testing of applications and web pages</li>
+                                <li> localization testig of applications and web pages</li>
+                                <li> bug report writing</li>
+                            </ul></p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Website tester</h5>
+                            <p class="mb-2"><strong><a href="https://www.testbirds.com/">Testbirds</a></strong></p>
+                            <p>
+                                <ul>
+                                    <li> functional testing of web pages</li>
+                                    <li> bug report writing</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Full Stack Software Engineer Intern</h5>
+                            <p class="mb-2"><strong><a href="https://www.zira.com.ba/">Zira LTD</a></strong></p>
+                            <p>
+                                <ul>
+                                    <li> full stack app development</li>
+                                    <li> front-end development( Angular ) </li>
+                                    <li> back-end development ( Java, Swing, Maven, Eureka, Hibernate ) </li>
+                                    <li> database development ( PostgreSQL )</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+
+    <!-- Cefrtificates Start -->
+    <div class="container-fluid pt-5" id="certificates">
+        <div class="container">
+            <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">certificates</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My certificates</h1>
+            </div>
+            <div class="row pb-2">
+                <div class="service-box col-lg-6 col-md-5 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Google Ads Display Certification</h4>
+                    </div>
+                    <p>The ability to develop an effective strategy and campaign to display ads that achieve specific marketing goals.</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="https://skillshop.exceedlms.com/student/award/uuwnPSaNHdB6LozndHv7oA2b">Read More</a>
+                </div>
+
+                <div class="service-box col-lg-5 col-md-5 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Certificated Userfeel tester</h4>
+                    </div>
+                    <a href="https://app.userfeel.com/t/2f6754e8" target="_blank"><img src="https://app.userfeel.com/tester/386168/image?.png" width="257" class="no-b-lazy"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Certificates End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form action="https://getform.io/f/7198efc3-4fe4-4a28-9cde-1a32ecea8f44" method="POST">
+                            <input class="form-control p-4" type="text" name="name" placeholder="Your name" required="required" data-validation-required-message="Please enter your name"><br>
+                            <input class="form-control p-4" type="email" name="email" placeholder="Your email" required="required" data-validation-required-message="Please enter your email"><br>
+                            <input class="form-control p-4" type="text" name="subject" placeholder="Subject"
+                            required="required" data-validation-required-message="Please enter a subject" ><br>
+                            <textarea name="message" class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea><br>
+                            <button type="submit" class="btn btn-outline-primary">Send message to me!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-1 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/MirzaZiko1"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/striko1921/"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/mziko/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/mirza_ziko/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
