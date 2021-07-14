@@ -87,6 +87,11 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-    
+    var scrollEventHandler = function()
+    {
+        window.scroll(0, window.pageYOffset)
+    }
+
+        window.addEventListener("scroll", scrollEventHandler, false);
 })(jQuery);
 
