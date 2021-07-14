@@ -41,22 +41,7 @@
     }
 
 
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
+ 
 
 
     // Scroll to Bottom
@@ -101,16 +86,6 @@
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        dots: true,
-        loop: true,
-        items: 1
     });
     
 })(jQuery);
