@@ -1,20 +1,25 @@
 <?php
-if(empty($_POST['name']) || empty($_POST['subject']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-  http_response_code(500);
-  exit();
-}
+    # registration.php
+    
+    error_reporting( E_ALL );
+    ini_set( 'display_errors', 1 );
 
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email = strip_tags(htmlspecialchars($_POST['email']));
-$m_subject = strip_tags(htmlspecialchars($_POST['subject']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
-
-$to = "ziko.mirza1921@gmail.com"; // Change this email to your //
-$subject = "$m_subject:  $name";
-$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
-$header = "From: $email";
-$header .= "Reply-To: $email";	
-
-if(!mail($to, $subject, $body, $header))
-  http_response_code(500);
+    
+    if( $_SERVER['REQUEST_METHOD']=='_GET' && isset( $_POST['message'] ) ){
+        ob_clean();
+        
+        $lb="\r\n";
+        
+        $recipient='ziko.mirza1921@gmail.com';
+        $message=$_POST['message'];
+        $subject='This is a test';
+        $headers=array(
+            'From: webmaster@example.com',
+            'Reply-To: webmaster@example.com',
+            'Cc: joe.bloggs@example.com'
+        );
+        
+        $status=mail( $recipient, $subject, $message, implode( $lb, $headers ) ;
+        exit( header( sprintf('Location: index.html?mailsent=%s', $status ) ) );
+    }
 ?>

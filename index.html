@@ -92,7 +92,7 @@
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Mirza Žiko</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Date of Birth: <span class="text-secondary">15 May 1999</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Undergradueted</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">undergraduated</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">1 Year</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">mirza.ziko@outlook.com</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
@@ -199,7 +199,7 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -224,7 +224,7 @@
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative ex-me mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
-                            <h5 class="font-weight-bold mb-1">Application and Website tesiter</h5>
+                            <h5 class="font-weight-bold mb-1">Application and Website tester</h5>
                             <p class="mb-2"><strong><a href="https://www.utest.com/">uTest</a></strong></p>
                             <p><ul>
                                 <li> functional testing of applications and web pages</li>
@@ -306,28 +306,29 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" 
+                        action="https://getform.io/f/a0c2d6ec-0e37-4e93-890d-7bdc1bb107ec" method="POST">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
+                                        required="required" data-validation-required-message="Please enter your name" name="name"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
                                     <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
+                                        required="required" data-validation-required-message="Please enter your email" name="email"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                    required="required" data-validation-required-message="Please enter a subject" name="subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
                                     required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                    data-validation-required-message="Please enter your message" name="message" ></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -335,7 +336,6 @@
                                     Message</button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
